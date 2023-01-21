@@ -1,0 +1,563 @@
+header {
+    .envato {
+        background-color: #262626;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .envato-logo {
+            width: 185px;
+            height: 45px;
+            padding: 0px 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+                cursor: pointer;
+            }
+        }
+
+        .envato-button {
+            padding: 0px 20px;
+
+            .buy {
+                font-size: 14px;
+                padding: 5px 20px;
+                background-color: #82b440;
+                color: #fff;
+                font-weight: 500;
+                border-radius: 6px;
+                font-family: 'Montserrat', sans-serif;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                filter: opacity(1);
+
+                &:hover {
+                    filter: opacity(0.7);
+                }
+            }
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 731px;
+
+
+        .container {
+
+
+            .row {
+
+                display: flex;
+                align-items: baseline;
+
+                .swipy-logo {
+                    @media screen and (max-width: 768px) {
+                        width: 391px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+
+
+
+                    img {
+                        width: 156px;
+                        height: 57px;
+                        object-fit: cover;
+                        object-position: center;
+                        cursor: pointer;
+                    }
+
+                    .mobile-view {
+                        @media screen and (max-width: 768px) {
+                            padding-right: 16px;
+                        }
+
+                        .fa-bars {
+                            @media screen and (max-width: 768px) {
+                                display: block;
+                            }
+
+                            background: #372748;
+                            padding: 13px 14px 14px 14px;
+                            width: 52px;
+                            height: 52px;
+                            border-radius: 50%;
+                            color: white;
+                            font-size: 23px;
+                            //  display: flex;
+                            //  align-items: center;
+                            //  justify-content: center;
+                            cursor: pointer;
+                            display: none;
+
+                        }
+                    }
+
+                }
+
+                .swipy-middle {
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+
+
+                    list-style: none;
+                    display: flex;
+                    align-items: baseline;
+                    gap: 35px;
+                    justify-content: right;
+
+                    .home {
+                        font-size: 16px;
+                        font-weight: 600;
+                        font-family: 'Noto Sans', sans-serif;
+                        text-transform: capitalize;
+                        color: #6722b5;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        position: relative;
+                        transition: .3s ease-in-out;
+
+                        .fa-plus {
+                            font-size: 12px;
+
+                        }
+                        ul{
+                            list-style: none;
+                            background: #ffffff;
+                            margin: 19px;
+                            padding: 24px 57px;
+                            position: absolute;
+                            top: 4px;
+                            left: -41px;
+                            display: none;
+                            transition: .3s ease-in-out;
+                            .page1{
+                                font-size: 14px;
+                                font-weight: 500;
+                                width: 97px;
+                                cursor: pointer;
+                                transition: .3s ease-in-out;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                            .page2{
+                                font-size: 14px;
+                                font-weight: 500;
+                                width: 97px;
+                                padding-top: 14px;
+                                cursor: pointer;
+                                transition: .3s ease-in-out;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                        }
+                        &:hover{
+                            ul{
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .about {
+                        font-size: 16px;
+                        font-weight: 600;
+                        font-family: 'Noto Sans', sans-serif;
+                        text-transform: capitalize;
+                        color: #19082d;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        position: relative;
+
+                        .fa-plus {
+                            font-size: 12px;
+
+                        }
+                        .drop2{
+                            list-style: none;
+                            background: #ffffff;
+                            margin: 19px;
+                            padding: 24px 57px;
+                            position: absolute;
+                            top: 6px;
+                            left: -18px;
+                            display: none;
+                            
+                            .page3{
+                                font-size: 14px;
+                                font-weight: 500;
+                                width: 97px;
+                                cursor: pointer;
+                                transition: .3s ease-in-out;
+                                color: #6722b5;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                            .page4{
+                                font-size: 14px;
+                                font-weight: 500;
+                                width: 97px;
+                                padding-top: 14px;
+                                cursor: pointer;
+                                transition: .3s ease-in-out;
+                                color: #6722b5;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                        }
+                        &:hover{
+                            .drop2{
+                                display: block;
+                            }
+                        }
+
+                    }
+                    .about2 {
+                        font-size: 16px;
+                        font-weight: 600;
+                        font-family: 'Noto Sans', sans-serif;
+                        text-transform: capitalize;
+                        color: #19082d;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        position: relative;
+
+                        .fa-plus {
+                            font-size: 12px;
+
+                        }
+                        .drop3{
+                            list-style: none;
+                            background: #ffffff;
+                            margin: 19px;
+                            padding: 24px 57px;
+                            position: absolute;
+                            top: 6px;
+                            left: -18px;
+                            display: none;
+                            
+                            .page3{
+                                font-size: 14px;
+                                font-weight: 500;
+                                width: 97px;
+                                cursor: pointer;
+                                transition: .3s ease-in-out;
+                                color: #6722b5;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                            .page4{
+                                font-size: 14px;
+                                font-weight: 500;
+                                width: 145px;
+                                padding-top: 14px;
+                                cursor: pointer;
+                                transition: .3s ease-in-out;
+                                color: #6722b5;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                        }
+                        &:hover{
+                            .drop3{
+                                display: block;
+                            }
+                        }
+
+                    }
+                    .about3 {
+                        font-size: 16px;
+                        font-weight: 600;
+                        font-family: 'Noto Sans', sans-serif;
+                        text-transform: capitalize;
+                        color: #19082d;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        position: relative;
+
+                        .fa-plus {
+                            font-size: 12px;
+
+                        }
+                        .drop3{
+                            list-style: none;
+                            background: #ffffff;
+                            margin: 19px;
+                            padding: 24px 57px;
+                            position: absolute;
+                            top: 6px;
+                            left: -18px;
+                            display: none;
+                            
+                            .page3{
+                                font-size: 13px;
+                                font-weight: 500;
+                                width: 135px;
+                                cursor: pointer;
+                                transition: 0.3s ease-in-out;
+                                color: #6722b5;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                            .page4{
+                                font-size: 13px;
+                                font-weight: 500;
+                                width: 150px;
+                                padding-top: 14px;
+                                cursor: pointer;
+                                transition: 0.3s ease-in-out;
+                                color: #6722b5;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                        }
+                        &:hover{
+                            .drop3{
+                                display: block;
+                            }
+                        }
+
+                    }
+                }
+
+                .swipy-end {
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    gap: 31px;
+                    justify-content: right;
+
+                    .fa-magnifying-glass {
+
+
+
+
+                        color: #3B4052;
+                        font-size: 19px;
+                        cursor: pointer;
+                    }
+
+                    .fa-bars {
+                        background: #372748;
+                        padding: 13px 14px 14px 14px;
+                        width: 52px;
+                        height: 52px;
+                        border-radius: 50%;
+                        color: white;
+                        font-size: 23px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .import {
+            @media screen and (max-width: 768px) {
+                padding: 0px;
+            }
+
+            padding: 79px 0px;
+
+            .container {
+                .row {
+                    display: flex;
+                    align-items: end;
+
+                    .digital {
+
+
+                        h2 {
+                            @media screen and (max-width: 768px) {
+                                font-size: 30px;
+                                margin: 0px 0px 11px;
+                            }
+
+                            font-size: 78px;
+                            line-height: 1.3;
+                            font-weight: 600;
+                            color: #19082d;
+                            margin: 0 0 27px;
+                            font-family: 'Poppins',
+                            sans-serif;
+                        }
+
+                        p {
+                            @media screen and (max-width: 768px) {
+                                max-width: 382px;
+                                font-size: 17px;
+                                margin: 0px 0px 27px;
+                            }
+
+                            font-family: 'Poppins',
+                            sans-serif;
+                            font-size: 18px;
+                            line-height: 26px;
+                            font-weight: 400;
+                            color: #3e3e3e;
+                            margin: 0 0 45px;
+                            width: 684px;
+                        }
+
+                        .get {
+                            display: flex;
+                            align-items: self-start;
+                            gap: 23px;
+
+                            .star {
+                                @media screen and (max-width: 768px) {
+                                    font-size: 15px;
+                                    padding: 10px 38px;
+                                }
+                                background-color: rgba(103, 34, 181, 0.85);
+                                padding: 21px 33px;
+                                border-radius: 15px;
+                                color: #ffffff;
+                                font-size: 18px;
+                                font-weight: 600;
+                                border: none;
+                                cursor: pointer;
+                                font-family: 'Josefin Sans', sans-serif;
+                            }
+
+                            .play-button {
+                                display: flex;
+                                align-items: baseline;
+
+                                .play {
+                                    border-width: 1px;
+                                    border-radius: 15px;
+                                    font-weight: 600;
+                                    border-color: #6722b5;
+                                    border-style: solid;
+                                    margin-left: 12px;
+                                    margin-right: 15px;
+                                    padding: 22px 33px !important;
+                                    width: 80px;
+                                    background: transparent;
+                                    height: 69px;
+                                    // transition: .5s ease-in-out;
+
+                                    // &:hover {
+                                    //     border-color: #fd7e14;
+                                    // }
+                                }
+
+                                .fa-play {
+                                    font-size: 22px;
+                                    line-height: 25px;
+                                    color: #6722b5;
+                                    transition: .5s ease-in-out;
+
+                                    &:hover {
+                                        color: #fd7e14;
+                                    }
+                                }
+                            }
+
+                            p {
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: #3E3E3E;
+                                font-family: 'Poppins', sans-serif;
+                                width: 120px;
+                                transition: .5s ease-in-out;
+
+                                &:hover {
+                                    color: #fd7e14;
+                                }
+                            }
+                        }
+                    }
+
+                    .design-img {
+                        @media screen and (max-width: 768px) {
+                           display: none;
+                        }
+                        width: 478px;
+                        height: 478px;
+                        position: relative;
+
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+
+                        }
+
+                        .design-hover {
+                            position: absolute;
+                            width: 478px;
+                            height: 478px;
+                            top: -12%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                        }
+                    }
+                    .mobile-design{
+                        @media screen and (max-width: 768px) {
+                            width: 253px;
+                            height: 253px;
+                            margin-left: 46px;
+                        }
+                        img{
+                            @media screen and (max-width: 768px) {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+    }
+
+}

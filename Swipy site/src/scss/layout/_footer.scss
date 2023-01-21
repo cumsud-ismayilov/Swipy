@@ -1,0 +1,171 @@
+footer {
+    background-color: #1D1C2D;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        .row {
+            border-bottom: 1px solid rgb(245 224 224 / 10%);
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            padding-bottom: 44px;
+
+            .site-logo {
+                width: 157px;
+                height: 53px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+
+            .services {
+                p {
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #ffffff;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+
+        .row {
+            border-bottom: 1px solid rgba(245, 224, 224, 0.1);
+
+            .update {
+                p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: lightgray;
+                    margin: 0px 0px 20px 0;
+                }
+
+                form {
+                    input {
+                        font-size: 16px;
+                        padding: 15px 30px;
+                        margin: 0;
+                        color: #333;
+                        width: 100%;
+                        background: #fff;
+                        border: none;
+                        border-radius: 10px;
+                    }
+                }
+
+                .subscribe {
+                    margin-top: 20px;
+                    border: none;
+                    background: #6722b5;
+                    color: #fff;
+                    padding: 15px 30px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    border-radius: 14px;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        background-color: #fd7e14;
+                        border: none;
+                        border-color: transparent;
+                    }
+                }
+
+                .icons {
+                    padding-top: 7px;
+                    display: flex;
+                    align-items: center;
+                    gap: 13px;
+
+                    i {
+                        color: lightgray;
+                        font-size: 22px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .video {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                li {
+                    font-size: 15px;
+                    padding: 6px 0 4px 0px;
+                    color: lightgray;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        color: #fd7e14;
+
+                    }
+                }
+            }
+        }
+
+        .row {
+            .foot-middle {
+                @media screen and (max-width: 768px){
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+
+                p {
+                    font-size: 17px;
+                    color: lightgray;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        color: #fd7e14;
+
+                    }
+                }
+
+                .middle {
+                    list-style: none;
+                    display: flex;
+                    gap: 34px;
+
+                    .about {
+                        font-size: 17px;
+                        color: lightgray;
+                        cursor: pointer;
+                        transition: .3s ease-in-out;
+    
+                        &:hover {
+                            color: #fd7e14;
+    
+                        }
+                    }
+
+                    .contact {
+                        font-size: 17px;
+                        color: lightgray;
+                        cursor: pointer;
+                        transition: .3s ease-in-out;
+                        list-style: disc;
+    
+                        &:hover {
+                            color: #fd7e14;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
